@@ -1,0 +1,44 @@
+name: bdd-flood
+
+# notes:
+# There are only four data types: string, float, path, uri (no int or bool).
+# https://mlflow.org/docs/latest/projects.html#specifying-parameters
+
+entry_points:
+  # tests using benchmark data.
+  benchmarks:
+    parameters:
+      adaptive: {type: string}
+      base_gpu_id: {type: float}
+      bs_tr: {type: float}
+      dataset: {type: string}
+      dimension: {type: float}
+      epochs: {type: float}
+      eta: {type: float}
+      flood_level: {type: float}
+      force_cpu: {type: string}
+      force_one_gpu: {type: string}
+      gradnorm: {type: string}
+      imbalance_factor: {type: float}
+      loss: {type: string}
+      method: {type: string}
+      model: {type: string}
+      momentum: {type: float}
+      noise_frac: {type: float}
+      num_classes: {type: float}
+      num_minority_classes: {type: string}
+      optimizer: {type: string}
+      optimizer_base: {type: string}
+      pre_trained: {type: string}
+      quantile_level: {type: float}
+      radius: {type: float}
+      random_seed: {type: float}
+      saving_freq: {type: float}
+      sigma: {type: float}
+      skip_singles: {type: string}
+      step_size: {type: float}
+      theta: {type: float}
+      tilt: {type: float}
+      tr_frac: {type: float}
+      weight_decay: {type: float}
+    command: "python benchmarks.py --adaptive {adaptive} --base-gpu-id {base_gpu_id} --bs-tr {bs_tr} --dataset {dataset} --dimension {dimension} --epochs {epochs} --eta {eta} --flood-level {flood_level} --force-cpu {force_cpu} --force-one-gpu {force_one_gpu} --gradnorm {gradnorm} --imbalance-factor {imbalance_factor} --loss {loss} --method {method} --model {model} --momentum {momentum} --noise-frac {noise_frac} --num-classes {num_classes} --num-minority-classes {num_minority_classes} --optimizer {optimizer} --optimizer-base {optimizer_base} --pre-trained {pre_trained} --quantile-level {quantile_level} --radius {radius} --random-seed {random_seed} --saving-freq {saving_freq} --sigma {sigma} --skip-singles {skip_singles} --step-size {step_size} --theta {theta} --tilt {tilt} --tr-frac {tr_frac} --weight-decay {weight_decay}"
