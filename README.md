@@ -63,7 +63,7 @@ Running our full set of experiments, for all relevant methods and datasets in on
 (collapse) $ python run_benchmarks.py
 ```
 
-and letting the scripts run (this takes some time). Regarding how long the tests take to run, we split the effort across four machines (one for each dataset, each eqipped with NVIDIA A100), and it still took several days.
+and letting the scripts run (this takes some time). Regarding how long the tests take to run, we split the effort across four machines (one for each dataset, each equipped with NVIDIA A100), and it still took several days.
 
 To view results once the above script has been executed, use the Jupyter notebook called `eval_benchmarks.ipynb`.
 
