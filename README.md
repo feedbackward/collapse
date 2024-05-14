@@ -3,7 +3,7 @@
 
 In this repository, we provide software and demonstrations related to the following paper:
 
-- [Criterion collapse and loss distribution control](https://arxiv.org/abs/2402.09802). Matthew J. Holland. *Preprint*.
+- [Criterion Collapse and Loss Distribution Control](https://arxiv.org/abs/2402.09802). Matthew J. Holland. *ICML 2024*, to appear.
 
 This repository contains code which can be used to faithfully reproduce all the experimental results given in the above paper, and it can be easily applied to more general machine learning tasks outside the examples considered here.
 
